@@ -506,6 +506,9 @@ public:
     auto irecv(Args... args) const;
 
     template <typename... Args>
+    auto sendrecv(Args... args) const;
+
+    template <typename... Args>
     auto alltoall(Args... args) const;
 
     template <typename... Args>
